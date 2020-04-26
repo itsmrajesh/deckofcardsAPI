@@ -6,7 +6,7 @@ import com.deckofcards.docapp.entity.DeckAPIResponse;
 public interface CardOperations {
 	DeckAPIResponse createNewDeck();
 
-	DeckAPIResponse createNewDeckWithJokers();
+	DeckAPIResponse createNewDeckWithJokers(boolean status);
 
 	DrawCard drawCard(int count);
 

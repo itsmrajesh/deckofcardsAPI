@@ -21,12 +21,12 @@ public class DeckOfCardsApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		DeckAPIResponse obj = cardOperationsService.createNewDeck();
-		System.out.println(obj);
-		obj = cardOperationsService.createNewDeckWithJokers();
-		System.out.println(obj);
-		DrawCard resp = cardOperationsService.drawCard(1);
-		System.out.println(resp);
+		/*
+		 * DeckAPIResponse obj = cardOperationsService.createNewDeck();
+		 * System.out.println(obj); obj =
+		 * cardOperationsService.createNewDeckWithJokers(); System.out.println(obj);
+		 * DrawCard resp = cardOperationsService.drawCard(1); System.out.println(resp);
+		 */
 	}
 
 }

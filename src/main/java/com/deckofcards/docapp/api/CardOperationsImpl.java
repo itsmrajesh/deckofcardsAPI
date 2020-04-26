@@ -31,14 +31,9 @@ public class CardOperationsImpl implements CardOperations {
 	}
 
 	@Override
-	public DeckAPIResponse createNewDeckWithJokers() {
-
-		DeckAPIResponse res = new DeckAPIResponse(false, null, false, 0);
-
-		DeckAPIResponse resp = restTemplate.postForObject(base_url + "new?jokers_enabled=true", res, DeckAPIResponse.class);
-		System.out.println(resp);
-		
-		return null;// res.getBody();
+	public DeckAPIResponse createNewDeckWithJokers(boolean status) {
+		String url = base_url + "new?jokers_enabled="+status;
+		return restTemplate.getForObject(url, DeckAPIResponse.class);
 	}
 
 	@Override

@@ -20,7 +20,7 @@ public class CardOperationsServiceImpl implements CardOperationsService {
 
 	@Override
 	public DeckAPIResponse createNewDeckWithJokers() {
-		return cardOperations.createNewDeckWithJokers();
+		return null;
 	}
 
 	@Override
